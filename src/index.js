@@ -16,7 +16,7 @@ app.use(trackRoutes);
 const mongoUri = 'mongodb+srv://stylebyjmsa:Thefirm@cluster0-ltctl.mongodb.net/test?retryWrites=true&w=majority';
 if (!mongoUri) {
   throw new Error(
-    `MongoURI was not supplied.  Make sure you watch the video on setting up Mongo DB!`
+    `MongoURI was not supplied.`
   );
 }
 mongoose.connect(mongoUri, {
